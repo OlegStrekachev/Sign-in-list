@@ -124,14 +124,15 @@ fetch("http://127.0.0.1:3000/api/kids/allkids")
 function tableBlueprint() {
   return `
   <body>
-  <table class="table table-striped container-fluid table-responsive">
-    <colgroup>
+  <table class="table full-width-table table-striped container-fluid table-responsive">
+    <colgroup">
       <col style="width: 5%" />
       <col style="width: 25%" />
       <col style="width: 5%" />
       <col style="width: 35%" />
-      <col />
-      <col />
+      <col style="width: 15%" />
+      <col style="width: 15%" />
+      <col style="width: 10%" /> 
     </colgroup>
     <thead>
       <tr>
