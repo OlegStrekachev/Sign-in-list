@@ -1,0 +1,22 @@
+/* p {
+    color: red;
+    margin-left: 100px;
+} */
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+body > * {
+  max-width: 1200px;
+}
+
+body > * {
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+

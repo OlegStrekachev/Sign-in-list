@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.4",
+    "nodemailer": "^6.9.1",
+    "pdfmake": "^0.2.7",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "name": "kids-list",
+  "version": "1.0.0",
+  "description": "Sending sign in list to a printer",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Oleg Strekachev",
+  "license": "ISC"
+}
