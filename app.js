@@ -13,10 +13,6 @@ db.once("open", function () {
   console.log("Connected successfully");
 });
 
-// Works
-
-// My modules
-
 const router = require("./my_modules/router/router.js");
 
 // Middleware
@@ -35,28 +31,6 @@ expressApp.get("/kidstable", async (req, res) => {
   res.sendFile(path.join(__dirname, "public", "kidstable.html"));
 });
 
-// expressApp.post('/send-email', async (req, res) => {
-//   try {
-//     //Call the sendMail function
-//     await sendMail();
-//     res.status(200).send("Email sent succesfully");
-//   } catch (error) {
-//     console.error("Error sending email", error);
-//     res.status(500).send('Failed to send email');
-//   }
-// });
-
 expressApp.use("/api", router);
 
 module.exports = expressApp;
-
-// Server
-// app.listen(port, () => {
-//   console.log(`Listening on port ${port}...`);
-// });
-
-// Sends an email from nodemailer
-
-// sendMail()
-
-// Connect database from mongo db
